@@ -18,17 +18,33 @@ back to an offline "echo" engine so every command still works.
 
 ## Install
 
+**One command** (clones, installs the `sumo` command, and checks your setup):
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/digital242/sumo/main/install.sh | bash
+```
+
+**From a checkout** — pick whichever you like:
+
 ```bash
 git clone https://github.com/digital242/sumo.git
 cd sumo
-pip install -e .          # exposes the `sumo` command
+
+./install.sh          # guided setup
+# or
+make install          # just install the `sumo` command
+# or
+pip install -e .       # the plain pip way
 ```
 
-Or run it straight from the source tree without installing:
+Or run it straight from the source tree without installing anything:
 
 ```bash
 python3 -m sumo.cli doctor
 ```
+
+Common tasks are wrapped in the `Makefile` — run `make help` to see them
+(`make test`, `make chat`, `make doctor`, `make run AGENT=react GOAL="..."`).
 
 ## Enable real reasoning (Ollama)
 
