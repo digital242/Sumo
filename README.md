@@ -1,5 +1,7 @@
 # Sumo
 
+[![CI](https://github.com/digital242/sumo/actions/workflows/ci.yml/badge.svg)](https://github.com/digital242/sumo/actions/workflows/ci.yml)
+
 **A local-first personal AI that runs on your own devices.**
 
 Sumo is a small framework for building personal AI agents that run *on your
